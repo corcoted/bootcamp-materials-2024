@@ -1,4 +1,10 @@
 project:
   title: "BAYES_BATS Bootcamp 2024"
+  output-dir: _output
   
 format: html
+
+execute:
+  cache: true
+  freeze: auto
+  

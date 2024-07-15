@@ -42,3 +42,5 @@ vignettes/*.pdf
 
 # quarto
 /.quarto/
+/_output/
+
