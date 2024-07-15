@@ -38,7 +38,11 @@ window.QuartoLineHighlight = function () {
     divSourceCode.forEach((el) => {
       if (el.hasAttribute(kCodeLineNumbersAttr)) {
         const codeLineAttr = el.getAttribute(kCodeLineNumbersAttr);
+<<<<<<< HEAD
         el.removeAttribute(kCodeLineNumbersAttr);
+=======
+        el.removeAttribute("data-code-line-numbers");
+>>>>>>> b15cd9ae81126c43ea9081346b6d3df3e5fe1eff
         if (handleLinesSelector(deck, codeLineAttr)) {
           // Only process if attr is a string to select lines to highlights
           // e.g "1|3,6|8-11"
@@ -165,9 +169,15 @@ window.QuartoLineHighlight = function () {
         if (typeof highlight.last === "number") {
           spanToHighlight = [].slice.call(
             codeBlock.querySelectorAll(
+<<<<<<< HEAD
               ":scope > span:nth-of-type(n+" +
                 highlight.first +
                 "):nth-of-type(-n+" +
+=======
+              ":scope > span:nth-child(n+" +
+                highlight.first +
+                "):nth-child(-n+" +
+>>>>>>> b15cd9ae81126c43ea9081346b6d3df3e5fe1eff
                 highlight.last +
                 ")"
             )
@@ -175,7 +185,11 @@ window.QuartoLineHighlight = function () {
         } else if (typeof highlight.first === "number") {
           spanToHighlight = [].slice.call(
             codeBlock.querySelectorAll(
+<<<<<<< HEAD
               ":scope > span:nth-of-type(" + highlight.first + ")"
+=======
+              ":scope > span:nth-child(" + highlight.first + ")"
+>>>>>>> b15cd9ae81126c43ea9081346b6d3df3e5fe1eff
             )
           );
         }

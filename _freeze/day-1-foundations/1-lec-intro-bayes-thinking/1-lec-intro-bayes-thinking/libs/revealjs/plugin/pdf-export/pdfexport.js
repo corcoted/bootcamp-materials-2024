@@ -101,9 +101,12 @@ var PdfExport = ( function( _Reveal ){
 			Reveal = _Reveal;
 			install();
 		};
+<<<<<<< HEAD
 		Plugin.togglePdfExport = function () {
       togglePdfExport();
     };
+=======
+>>>>>>> b15cd9ae81126c43ea9081346b6d3df3e5fe1eff
 	}
 
 	return Plugin;
